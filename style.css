@@ -16,7 +16,7 @@ p {
   font: 400 16px/120% "Rubik", sans-serif;
 }
 .kit-container {
-  background: url(/background-img.png) no-repeat;
+  background: url(background-img.png) no-repeat;
   background-size: cover;
   background-position: center;
   height: 120vh; width: 100%;
