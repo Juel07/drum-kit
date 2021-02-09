@@ -57,7 +57,7 @@ kbd {
 .instrument:not(.hi-hat, .crash-cymbal) {
   margin-left: 1em;
 }
-.play {
+.play {  /* animation style */
   transform: scale(1.1);
   border: 3px solid #7aa7fa;
   box-shadow: 0 0 5px #95baff;

@@ -7,7 +7,7 @@ function playKeyAudio(event) {
     audio.play()
     // reset the audio to play from beginning
     audio.currentTime = 0
-    // add the transition style to indicate active press
+    // add the animation style to indicate active press
     instrument.classList.add('play')
 }
 
@@ -20,7 +20,7 @@ for (let i = 0; i < instruments.length; i++) {
         // store the appropriate class name in a variable to pass into the function
         let instrumentName = this.classList[1] 
         playClickAudio(instrumentName)
-        // add the transition style to indicate active click
+        // add the animation style to indicate active click
         this.classList.add('play')
     })
 }
