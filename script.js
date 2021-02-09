@@ -27,7 +27,7 @@ for (let i = 0; i < instruments.length; i++) {
 
 function playClickAudio(instrument) {
 
-// play respective audio based on class name   
+    // play respective audio based on class name   
     switch (instrument) {
         case 'crash-cymbal':
             let crash = new Audio('sounds/crash-single-hit-a-key-02.wav')
@@ -74,14 +74,14 @@ function playClickAudio(instrument) {
     }
 }
 
-// remove transitioned previously added
+// remove transition previously added
 function removeTransition(e) {
     if (e.propertyName !== 'transform') { return }
     this.classList.remove('play')
 }
 
 // Event Listeners
-// when the transition ends (i.e after 0.07s)
+    // when the transition ends (i.e after 0.07s)
 instruments.forEach(x => x.addEventListener('transitionend', removeTransition))
-// when key on keyboard is pressed
+    // when key on keyboard is pressed
 window.addEventListener('keydown', playKeyAudio)
